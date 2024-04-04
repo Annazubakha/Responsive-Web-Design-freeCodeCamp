@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Anna Zubakha's certification projects during studying in
+          freeCodeCamp's Responsive Web Design course."
+    />
+    <title>Survey form</title>
+    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png" />
+    <link rel="stylesheet" href="../surveyForm/surveyForm.css" />
+  </head>
+  <body>
+    <main>
+      <a class="link-back" href="../../../index.html">Go Back</a>
+      <div class="wrapper">
+        <h1 id="title">
+          Application form for a <span>front-end developer </span>position
+        </h1>
+        <p id="description">Please put below the information about you.</p>
+        <form id="survey-form">
+          <label id="name-label"
+            >Name:
+            <input id="name" type="text" required placeholder="Enter your name"
+          /></label>
+          <label id="email-label"
+            >Email:
+            <input
+              placeholder="Enter your email"
+              id="email"
+              type="email"
+              required
+          /></label>
+          <label id="number-label"
+            >Age:
+            <input
+              id="number"
+              type="number"
+              min="18"
+              max="100"
+              required
+              placeholder="Enter your age"
+          /></label>
+          <p>Current location:</p>
+          <select id="dropdown">
+            <option>Ukraine</option>
+            <option>Other country</option>
+          </select>
+
+          <fieldset>
+            <legend>Gender</legend>
+            <label
+              ><input
+                type="radio"
+                name="gender"
+                id="male"
+                value="male"
+              />Male</label
+            >
+            <label
+              ><input
+                type="radio"
+                id="female"
+                value="female"
+                name="gender"
+              />Female</label
+            >
+          </fieldset>
+          <fieldset>
+            <legend>Have you got commercial experience?</legend>
+            <label
+              ><input
+                type="radio"
+                name="experience"
+                id="yes"
+                value="yes"
+              />Yes</label
+            >
+            <label
+              ><input
+                type="radio"
+                id="no"
+                value="no"
+                name="experience"
+              />No</label
+            >
+          </fieldset>
+          <p>Which technologies you currently know?</p>
+          <div class="checkbox_wrapper">
+            <label for="html"
+              ><input type="checkbox" id="html" value="html" />HTML</label
+            >
+            <label for="css"
+              ><input type="checkbox" id="css" value="css" />CSS</label
+            >
+            <label for="js"
+              ><input type="checkbox" id="js" value="js" />JavaScript</label
+            >
+            <label for="react"
+              ><input type="checkbox" id="react" value="react" />React</label
+            >
+          </div>
+          <textarea
+            placeholder="Write here additional information about you."
+          ></textarea>
+          <div class="btn">
+            <button id="submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
