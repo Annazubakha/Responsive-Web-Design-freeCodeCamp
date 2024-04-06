@@ -44,6 +44,10 @@ ul {
   color: #cbc8db;
   font-size: 30px;
 }
+.nav-link:focus,
+.nav-link:hover {
+  color: #db99ea;
+}
 
 main {
   padding: 120px 80px 80px 80px;
@@ -53,12 +57,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-@media screen and (min-width: 768px) {
-  a {
-    background-color: #6a2055;
-  }
 }
 
 .bag_img {
@@ -99,12 +97,12 @@ main {
 
 #form {
   text-align: center;
-  margin-bottom: 100px;
 }
 
 #products {
   text-align: center;
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+  padding-top: 80px;
 }
 
 #products > h2 {
@@ -112,7 +110,7 @@ main {
 }
 
 .main-section {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
 }
 
 .bags_list {
@@ -147,4 +145,24 @@ main {
 .features_title {
   font: 28px;
   margin-bottom: 10px;
+}
+
+.link-back {
+  color: #6a2055;
+  background-color: transparent;
+  border: 2px solid #6a2055;
+  text-decoration: none;
+  height: 30px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 3px 8px;
+  width: 80px;
+  justify-content: center;
+}
+
+.link-back:hover,
+.link-back:focus {
+  background-color: #6a2055;
+  color: #cbc8db;
 }

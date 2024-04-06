@@ -70,6 +70,7 @@ span {
   padding: 3px 8px;
   width: 80px;
   margin-bottom: 15px;
+  justify-content: center;
 }
 
 .link-back:hover,

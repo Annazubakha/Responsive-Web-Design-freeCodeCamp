@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Anna Zubakha's certification projects during studying in
+          freeCodeCamp's Responsive Web Design course."
+    />
+    <title>Product Landing Page</title>
+    <link rel="shortcut icon" type="image/png" href="../../img/favicon.png" />
+    <link rel="stylesheet" href="../docPage/docPage.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>react-spinners Documentation</header>
+      <a href="#React_Spinners" class="nav-link">React Spinners</a>
+      <a href="#Installation" class="nav-link">Installation</a>
+      <a href="#Usage" class="nav-link">Usage</a>
+      <a href="#Available_Loaders_PropTypes_and_Default_Values" class="nav-link"
+        >Available Loaders, PropTypes, and Default Values</a
+      >
+      <a href="#Reference" class="nav-link">Reference</a>
+      <a class="link-back" href="../../../index.html">Go Back</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="React_Spinners">
+        <header class="section_header">React Spinners</header>
+        <p>
+          A collection of loading spinners with React.js based on
+          <a href="https://github.com/yuanyan/halogen">Halogen</a>
+        </p>
+        <p>
+          This package is bootstraped using
+          <a href="https://github.com/juliancwirko/react-npm-boilerplate"
+            >react-npm-boilerplate
+          </a>
+        </p>
+      </section>
+      <section class="main-section" id="Installation">
+        <header class="section_header">Installation</header>
+        <p>With Yarn:</p>
+        <code>yarn add react-spinners</code>
+        <p>With npm:</p>
+        <code>npm install --save react-spinners</code>
+      </section>
+      <section class="main-section" id="Usage">
+        <header class="section_header">Usage</header>
+        <p>
+          Each loader has their own default properties. You can overwrite the
+          defaults by passing props into the loaders.
+        </p>
+        <p>
+          Each loader accepts a loading prop as a boolean. The loader will
+          render <code>null if loading is false.</code>
+        </p>
+      </section>
+      <section
+        class="main-section"
+        id="Available_Loaders_PropTypes_and_Default_Values"
+      >
+        <header class="section_header">
+          Available Loaders, PropTypes, and Default Values
+        </header>
+        <p>Common default props for all loaders:</p>
+        <code
+          >loading: true; color: "#000000"; cssOverride: {} speedMultiplier:
+          1;</code
+        >
+        <p>
+          All valid HTML props such as aria-* and data-* props are fully
+          supported.
+        </p>
+        <p class="text_accent">color prop</p>
+        <p>
+          color prop accepts a color hash in the format of #XXXXXX or #XXX. It
+          also accepts basic colors listed below:
+        </p>
+        <code
+          >maroon, red, orange, yellow, olive, green, purple, white, fuchsia,
+          lime, teal, aqua, blue, navy, black, gray, silver</code
+        >
+
+        <p class="text_accent">cssOverride prop</p>
+        <p>
+          The cssOverride prop is an object of camelCase styles used to create
+          inline styles on the loaders. Any html css property is valid here.
+        </p>
+        <p class="text_accent">size, height, width, and radius props</p>
+        <p>The input to these props can be number or string.</p>
+        <ul>
+          <li>If value is number, the loader will default to css unit px.</li>
+          <li>
+            If value is string, the loader will verify the unit against valid
+            css units.
+          </li>
+          <li>If unit is valid, return the original value</li>
+          <li>
+            If unit is invalid, output warning console log and default to px
+          </li>
+          <li></li>
+        </ul>
+      </section>
+      <section class="main-section" id="Reference">
+        <header class="section_header">Reference</header>
+        <p>
+          All the documentation in this page is taken from
+          <a href="https://www.npmjs.com/package/react-spinners"
+            >npm react-spinners
+          </a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

@@ -125,6 +125,7 @@ textarea {
   align-items: center;
   padding: 3px 8px;
   width: 80px;
+  justify-content: center;
 }
 
 .link-back:hover,
